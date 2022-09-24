@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b080dd40-6835-48dd-91bc-1866423b9c2f" name="Changes" comment="##test_github&#10;##test_github(2)">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/1-square.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/1-triangle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise_1.py" afterDir="false" />
+    <list default="true" id="b080dd40-6835-48dd-91bc-1866423b9c2f" name="Changes" comment="[IM 1011](2)">
+      <change afterPath="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_3/ex7.py" beforeDir="false" afterPath="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_3/ex7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,21 +49,25 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping" />
       <recent name="$PROJECT_DIR$/[IM 1011] Python Programming Foundation" />
       <recent name="$PROJECT_DIR$/Practice_in_Week_2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5">
-    <configuration name="1-triangle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="exercise_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myproject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/1-triangle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,16 +76,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exercise_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myproject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice_in_Week_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice_in_Week_2/2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/exercise_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,52 +97,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="homework_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myproject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice_in_Week_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice_in_Week_2/3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="myproject1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="myproject1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[IM 1011] Python Programming Foundation/Practice_in_Week_2/5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/homework_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,13 +139,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myproject1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/[GenEdu5010] Programming and Web Scraping/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myproject1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.5" />
-        <item itemvalue="Python.4" />
-        <item itemvalue="Python.1-triangle" />
-        <item itemvalue="Python.2" />
-        <item itemvalue="Python.3" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.homework_1" />
+        <item itemvalue="Python.exercise_3" />
+        <item itemvalue="Python.exercise_2" />
+        <item itemvalue="Python.tt" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +211,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662434265873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="##test_github&#10;##test_github(2)">
+      <created>1663042023135</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663042023135</updated>
+    </task>
+    <task id="LOCAL-00004" summary="GenEdu(1)">
+      <created>1663126227741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663126227741</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[IM 1011](2)">
+      <created>1663646458497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663646458497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +249,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="##test_github" />
     <MESSAGE value="##test_github&#10;##test_github(2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="##test_github&#10;##test_github(2)" />
+    <MESSAGE value="GenEdu(1)" />
+    <MESSAGE value="[IM 1011](2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[IM 1011](2)" />
   </component>
 </project>

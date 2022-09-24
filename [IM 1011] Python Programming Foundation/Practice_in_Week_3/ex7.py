@@ -28,7 +28,8 @@ a = dict(first_movie=[first_movie_name, first_rate],
          second_movie=[second_movie_name, second_rate],
          third_movie=[third_movie_name, third_rate])
 
-# key=lambda movies: movies[1] means name the elements in a.values() 'movies', and then sort 'movies' with movies[1].
+# key=lambda movies: movies[1] means:
+# name the elements in a.values() 'movies', and then sort 'movies' with movies[1].
 sorted_movie_list = sorted(a.values(), key=lambda movies: movies[1], reverse=True)
 print(f'The highest rated movie is {sorted_movie_list[0][0]}, whose rate is {sorted_movie_list[0][1]}.', sep='', end='\n')
 print(f'The highest rated movie is {sorted_movie_list[2][0]}, whose rate is {sorted_movie_list[2][1]}.', sep='', end='\n')
