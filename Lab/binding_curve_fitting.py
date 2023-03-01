@@ -1,8 +1,8 @@
-import matplotlib
+
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
-matplotlib.use('TkAgg')
+
 
 # sigmoid function
 # def sigmoid(x, L ,x0, k, b):
@@ -22,14 +22,14 @@ def Hill_Langmuir_equation(x, Ka, n):
 
 
 # experimental data
-concentration_of_RRM_836_1162 = np.array([0.33, 0.66, 1.32, 2.64])
+concentration_of_RRM_836_1162 = np.array([0.33, 0.66, 0.825, 0.99, 1.155, 1.32, 2.64])
 concentration_of_RRM_1895_3281 = np.array([0.165, 0.33, 0.66, 1.32, 2.64])
-bound_fraction_836 = np.array([0, 0, 0.690384615, 1.0])
-bound_fraction_1162 = np.array([0, 0, 0.753030303, 1.0])
+bound_fraction_836 = np.array([0, 0, 0, 0.017857143, 0, 0.690384615, 1.0])
+bound_fraction_1162 = np.array([0, 0, 0.058823529, 0.115384615, 0.115384615, 0.753030303, 1.0])
 bound_fraction_1895 = np.array([0.027777778, 0.148809524, 0.672727273, 0.846153846, 1.0])
 bound_fraction_3281 = np.array([0, 0.14619883, 0.583333333, 1.0, 1.0])
-std_of_bound_fraction_836 = np.array([0, 0, 0.410665861, 0])
-std_of_bound_fraction_1162 = np.array([0, 0, 0.113565635, 0])
+std_of_bound_fraction_836 = np.array([0, 0, 0, 0, 0, 0.410665861, 0])
+std_of_bound_fraction_1162 = np.array([0, 0, 0, 0, 0, 0.113565635, 0])
 std_of_bound_fraction_1895 = np.array([0.03928371, 0.092597317, 0.179990817, 0.217571317, 0])
 std_of_bound_fraction_3281 = np.array([0, 0.170395348, 0.11785113, 0, 0])
 
@@ -49,7 +49,7 @@ initial_guess = [1.5, 32.0]
 for i in range(4):
     plt.errorbar(concentration_of_RRM_list[i], bound_fraction_list[i], yerr=std_of_bound_fraction_list[i],
                  fmt=format_list[i], capsize=5, capthick=1, ecolor=color_list[i], mfc=color_list[i], mec=color_list[i], label=f'{substrate_list[i]} bp')
-    popt, pcov = curve_fit(Hill_Langmuir_equation, concentration_of_RRM_list[i], bound_fraction_list[i], initial_guess, maxfev=6000000)
+    popt, pcov = curve_fit(Hill_Langmuir_equation, concentration_of_RRM_list[i], bound_fraction_list[i], initial_guess, maxfev=60000000)
     print(f'{substrate_list[i]}: \n\tK_a={list(popt)[0]} \n\tn={list(popt)[1]} \n\tK_d={list(popt)[0]**list(popt)[1]}\n')
     x_fit = np.arange(0.0, 2.7, 0.01)
     plt.plot(x_fit, Hill_Langmuir_equation(x_fit, *popt), color=color_list[i])
@@ -60,7 +60,6 @@ for i in range(4):
 # print(f'{substrate_list[1]}: \n\tK_d={list(popt)[0]} \n\tn={list(popt)[1]}\n')
 # x_fit = np.arange(0.0, 2.7, 0.01)
 # plt.plot(x_fit, Hill_Langmuir_equation(x_fit, *popt), color=color_list[1])
-
 
 
 plt.xlabel('[RRM] (μM)')
