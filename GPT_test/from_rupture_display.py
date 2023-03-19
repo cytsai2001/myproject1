@@ -7,7 +7,7 @@ import numpy as np
 from ruptures.utils import pairwise
 
 
-COLOR_CYCLE = ["#4286f4", "#f44174"]
+COLOR_CYCLE = ["#BF9B6F", "#8C6658"]
 
 
 class MatplotlibMissingError(RuntimeError):
@@ -80,7 +80,7 @@ def display(
     for axe, sig in zip(axarr, signal.T):
         color_cycle = cycle(COLOR_CYCLE)
         # plot s
-        axe.plot(x_axis_series, sig)
+        axe.plot(x_axis_series, sig, color='#73503C', linestyle='-', alpha=0.5)
 
         # color each (true) regime
         bkps = [0] + sorted(true_chg_pts)
