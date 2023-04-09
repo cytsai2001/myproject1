@@ -2,12 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.mixture import GaussianMixture
 import scipy
+import matplotlib
 
 
-def main(path_to_parent_folder):
+def main(path_to_parent_folder, BM_max=70, BM_min=130):
     # read step.txt and separate the lines by BMx_fixing_i
     beads = {}
-    with open(path_to_parent_folder + '/BMx_fixing_Pelt3000_mean/step.txt', 'r') as f:
+    with open(path_to_parent_folder + '/BMx_fixing_Pelt3000_mean_deadtime_2/step.txt', 'r') as f:
         lines = f.readlines()
         i = 0
         while i < len(lines):
@@ -29,7 +30,7 @@ def main(path_to_parent_folder):
         while i < len(beads[f'BMx_fixing_{bead}']):
             if len(beads[f'BMx_fixing_{bead}']) > 1:
                 # Check BM of step 0
-                if i == 0 and (not 50 <= float(beads[f'BMx_fixing_{bead}'][i].split("BM = ")[1].split(" ± ")[0]) <= 130):
+                if i == 0 and (not BM_min <= float(beads[f'BMx_fixing_{bead}'][i].split("BM = ")[1].split(" ± ")[0]) <= BM_max):
                     discarded_bead_by_init.append(f'BMx_fixing_{bead}')
                     break
 
@@ -43,7 +44,7 @@ def main(path_to_parent_folder):
                         next_line = beads[f'BMx_fixing_{bead}'][next_i]
                         next_bm = float(next_line.split("BM = ")[1].split(" ± ")[0])
 
-                        if 5 <= next_bm <= 130:
+                        if 5 <= next_bm <= 150:
                             break
                         else:
                             next_i += 1
@@ -65,7 +66,6 @@ def main(path_to_parent_folder):
                 break
         bead += 1
 
-
     # Use BIC to determine the optimal number of components
     bic = []
     n_components_range = range(1, 11)
@@ -77,7 +77,8 @@ def main(path_to_parent_folder):
     plt.plot(n_components_range, bic, 'o-')
     plt.xlabel('Number of components')
     plt.ylabel('BIC score')
-    plt.show()
+    plt.savefig(path_to_parent_folder + f"/BMx_fixing_Pelt3000_mean_deadtime_2/BIC.png"
+                , dpi=300)
 
     # Fit the GMM with the optimal number of components
     # n_components_optimal = n_components_range[np.argmin(bic)]
@@ -99,6 +100,5 @@ def main(path_to_parent_folder):
         ax.plot(x, pdf, label=f'Gaussian component {i}'+f'\n{round(gmm.means_[i][0], 3)} ± {round(np.sqrt(gmm.covariances_[i][0][0]), 3)}'.format(i+1))
 
     ax.legend()
-    plt.show()
-    plt.savefig(path_to_parent_folder + f"/BMx_fixing_Pelt3000_mean/step_size_fitting_manual_select_1.png"
+    plt.savefig(path_to_parent_folder + f"/BMx_fixing_Pelt3000_mean_deadtime_2/step_size_fitting_manual_select_5.png"
                 , dpi=300)
